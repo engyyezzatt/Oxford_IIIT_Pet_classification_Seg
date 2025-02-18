@@ -1,0 +1,7 @@
+
+# Alternatively, use a more generic pattern
+data/*
+!.gitignore
+
+# Keep the upload directory structure, but ignore all files inside it
+!data/
