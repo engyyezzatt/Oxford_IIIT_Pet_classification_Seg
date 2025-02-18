@@ -69,7 +69,7 @@ trainer.train_epoch(dataloaders['train'])
 ## Results
 
 - Segmentation evaluation plots: 
-![alt text](plots\Seg_evaluation_plots.png)
+![Segmentation evaluation plots](plots/Seg_evaluation_plots.png)
 
 ## Contributing
 
