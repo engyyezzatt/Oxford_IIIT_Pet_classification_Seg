@@ -47,12 +47,8 @@ project/
 
 ### Fine-Tuned-ResNet34
 
-1. Train-Val Accuracy Plot 
-![acc plot](plots/Resnet_classification_acc.png)
-
-
-2. Train-Val Loss Plot 
-![loss plot](plots/Resnet_Classification_loss.png)
+1. Train-Val Accuracy&Loss Plot
+![acc&loss plot](plots/Resnet_classification_acc_loss.png)
 
 
 3. Confusion Matrix 
