@@ -26,32 +26,7 @@ project/
 ├── notebooks/      # Jupyter notebooks
 ├── docs/           # Documentation
 └── data/           # Dataset directory
-```
-
-## Usage
-
-### Training the Classification Model
-
-```python
-from src.data.preprocessor import PetDatasetPreprocessor
-from src.models.classifier import PetClassifier
-
-# Initialize data and model
-preprocessor = PetDatasetPreprocessor("./data")
-dataloaders = preprocessor.load_data()
-model = PetClassifier(num_classes=37)
-
-# Train the model
-model.train(dataloaders['train'], dataloaders['val'], epochs=10)
-```
-
-### Training the Segmentation Model
-
-```python
-from src.models.segmentation import SegmentationTrainer
-
-trainer = SegmentationTrainer()
-trainer.train_epoch(dataloaders['train'])
+└── models/           # Saved models directory
 ```
 
 ## Evaluation Metrics
@@ -68,8 +43,31 @@ trainer.train_epoch(dataloaders['train'])
 
 ## Results
 
+- Classification evaluation plots 
+### Fine-Tuned-ResNet34
+1. Train-Val Accuracy Plot 
+![acc plot](plots/Resnet_classification_acc.png)
+
+2. Train-Val Loss Plot 
+![loss plot](plots/Resnet_Classification_loss.png)
+
+3. Confusion Matrix 
+![Confusion Matrix plot](plots/Resnet_classification_conf.png)
+
+
+### Simple CNN Model 
+1. Train-Val Accuracy&Loss Plot 
+![Accuracy&Loss plot](plots/CNN_classification_acc_loss.png)
+
+2. Confusion Matrix 
+![Confusion Matrix plot](plots/CNN_classification_conf.png)
+
+
 - Segmentation evaluation plots: 
-![Segmentation evaluation plots](plots/Seg_evaluation_plots.png)
+1. IOU & Dice Coefficient & Pixel Accuracy
+![evaluation plots](plots/Seg_evaluation_plots.png)
+
+
 
 ## Contributing
 
