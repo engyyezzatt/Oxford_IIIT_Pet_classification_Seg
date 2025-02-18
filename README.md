@@ -41,15 +41,19 @@ project/
 - Dice Coefficient
 - Pixel Accuracy
 
-## Results
+# Results
 
-- Classification evaluation plots 
+## Classification evaluation plots 
+
 ### Fine-Tuned-ResNet34
+
 1. Train-Val Accuracy Plot 
 ![acc plot](plots/Resnet_classification_acc.png)
 
+
 2. Train-Val Loss Plot 
 ![loss plot](plots/Resnet_Classification_loss.png)
+
 
 3. Confusion Matrix 
 ![Confusion Matrix plot](plots/Resnet_classification_conf.png)
@@ -59,11 +63,13 @@ project/
 1. Train-Val Accuracy&Loss Plot 
 ![Accuracy&Loss plot](plots/CNN_classification_acc_loss.png)
 
+
 2. Confusion Matrix 
 ![Confusion Matrix plot](plots/CNN_classification_conf.png)
 
 
-- Segmentation evaluation plots: 
+## Segmentation evaluation plots: 
+
 1. IOU & Dice Coefficient & Pixel Accuracy
 ![evaluation plots](plots/Seg_evaluation_plots.png)
 
